@@ -4,7 +4,7 @@ from service.api.db import db
 # 经验：先用true或false
 def init_db(update=False):
     # 管理员信息
-    db.session.add(AdminUser('admin@qq.com','$2b$12$BKSXKYuCgeXjr8IEbK02re0VhkFoAz7f3aHF3kYAMLzYaEiObqPYm'))
+    db.session.add(AdminUser('admin','$2b$12$BKSXKYuCgeXjr8IEbK02re0VhkFoAz7f3aHF3kYAMLzYaEiObqPYm'))
     # 邮箱配置
     # db.session.add(Smtp('demo@qq.com','卡密发卡网','smtp.qq.com','465','xxxxxxxxx',True))
     # 支付渠道
